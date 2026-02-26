@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Clock | Precision & Elegance</title>
+    <meta name="description" content="A premium digital and analog clock with modern glassmorphism design, real-time updates, and customizable formats.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="clock-container">
+        <div class="clock-card" id="clockCard">
+            <!-- Header Section -->
+            <header class="clock-header">
+                <div class="logo">QUANTUM<span>CLOCK</span></div>
+                <div class="timezone" id="timezoneDisplay">UTC +02:00</div>
+            </header>
+
+            <!-- Analog Clock -->
+            <div class="analog-clock">
+                <div class="face">
+                    <div class="marking marking-12"></div>
+                    <div class="marking marking-3"></div>
+                    <div class="marking marking-6"></div>
+                    <div class="marking marking-9"></div>
+                    
+                    <div class="hand hour-hand" id="hourHand"></div>
+                    <div class="hand min-hand" id="minHand"></div>
+                    <div class="hand second-hand" id="secondHand"></div>
+                    <div class="center-dot"></div>
+                </div>
+            </div>
+
+            <!-- Digital Clock & Date -->
+            <div class="info-section">
+                <div class="digital-clock" id="digitalClock">00:00:00</div>
+                <div class="format-indicator" id="formatIndicator">PM</div>
+                <div class="date-display" id="dateDisplay">THURSDAY, 26 FEB 2026</div>
+            </div>
+
+            <!-- Controls -->
+            <footer class="controls">
+                <button class="btn toggle-btn" id="formatToggle" aria-label="Toggle 12/24 hour format">
+                    <span class="btn-text">24H MODE</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <button class="btn theme-btn" id="themeToggle" aria-label="Toggle light/dark theme">
+                    <span class="icon">🌓</span>
+                </button>
+            </footer>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
